@@ -12,7 +12,7 @@ describe("Cypress Selectors", () => {
         cy.get('#backend-option').click()
         cy.url().should('include', 'backend')
         cy.on('uncaught:exception', () => {
-            return false;
+            return true;
         })
     })
 });
